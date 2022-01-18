@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  profiles: 
+    active: server
+rpc:
+  service:
+    serverId: app
+    exposedService: true
+    port: 18081
+    connectionTimeout: 5000
+    requestTimeout: 2000
+    retryCnt: 3
+    idleCnt: 5
+    idleInterval: 60
+    maxPoolConnection: 5
+    reconnectionTime: 30
+    zkCenter: 127.0.0.1:2181
+
+logging:
+  level:
+    root: info

@@ -1,0 +1,57 @@
+{"properties": [
+  {
+    "name": "rpc.service.port",
+    "type": "java.lang.Integer",
+    "description": "作为远程服务的端口(本机提供的远程调用服务端口)"
+  },
+  {
+    "name": "rpc.service.retryCnt",
+    "type": "java.lang.Integer",
+    "description": "连接池取不到连接时，标记一次失败，失败次数达到指定值时，连接池将会被标记为不可用"
+  },
+  {
+    "name": "rpc.service.connectionTimeout",
+    "type": "java.lang.Integer",
+    "description": "初次连接超时时间(毫秒)"
+  },
+  {
+    "name": "rpc.service.requestTimeout",
+    "type": "java.lang.Integer",
+    "description": "服务器响应生成到客户端接收到的时间差值阈值,每次通信的超时时间(毫秒)"
+  },
+  {
+    "name": "rpc.service.idleCnt",
+    "type": "java.lang.Integer",
+    "description": "服务器起效:心跳连接次数(达到指定次数后(中途没有业务连接进入)断开连接)((通道保持时间 = 次数 * 间隔))"
+  },
+  {
+    "name": "rpc.service.idleInterval",
+    "type": "java.lang.Integer",
+    "description": "服务器起效:每次心跳检测的时间间隔(秒)"
+  },
+  {
+    "name": "rpc.service.maxPoolConnection",
+    "type": "java.lang.Integer",
+    "description": "单个客户端连接池最大连接数(通道数)"
+  },
+  {
+    "name": "rpc.service.exposedService",
+    "type": "java.lang.Boolean",
+    "description": "是否暴露本机的服务(true:暴露服务(会启动一个服务线程对外提供服务),false:只作为客户端连接其他服务)"
+  },
+  {
+    "name": "rpc.service.serverId",
+    "type": "java.lang.String",
+    "description": "分布式服务ID(多实例时应该指定同一个ID),该ID将会用来区分连接池映射"
+  },
+  {
+    "name": "rpc.service.reconnectionTime",
+    "type": "java.lang.Integer",
+    "description": "连接池不可用后进行重连的最大时间(分)。不设置或者为-1时默认无限重试(至少会重试1次)"
+  },
+  {
+    "name": "rpc.service.zkCenter",
+    "type": "java.lang.String",
+    "description": "zookeeper注册中心地址"
+  }
+]}
