@@ -1,6 +1,7 @@
 # `t-rpc-framework`
 
-[TOC]
+GITHUB上的代码可能不是最新，
+最新版请查看[t-rpc-framework](https://gitee.com/tmq777/t-rpc-framework)
 
 ## 开发环境
 
